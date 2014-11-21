@@ -1,1 +1,2 @@
-../../chameleon.sh stop
+#!/bin/bash
+sh $OPENSHIFT_HOMEDIR/chameleon.sh stop

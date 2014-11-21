@@ -1,1 +1,2 @@
-../../chameleon.sh -Dhttp.port=$OPENSHIFT_DIY_PORT
+#!/bin/bash
+sh $OPENSHIFT_HOMEDIR/chameleon.sh -Dhttp.port=$OPENSHIFT_DIY_PORT -Dhttp.address=$OPENSHIFT_DIY_IP
