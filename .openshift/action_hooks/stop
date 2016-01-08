@@ -1,2 +1,2 @@
 #!/bin/bash
-sh $OPENSHIFT_REPO_DIR/chameleon.sh stop
+nohup $OPENSHIFT_REPO_DIR/chameleon.sh stop
