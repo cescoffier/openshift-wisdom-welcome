@@ -1,2 +1,3 @@
 #!/bin/bash
-sh $OPENSHIFT_HOMEDIR/chameleon.sh -Dhttp.port=$OPENSHIFT_DIY_PORT -Dhttp.address=$OPENSHIFT_DIY_IP
+cd $OPENSHIFT_REPO_DIR
+nohup ./chameleon.sh -Dhttp.port=$OPENSHIFT_DIY_PORT -Dhttp.address=$OPENSHIFT_DIY_IP |& /usr/bin/logshifter -tag wisdom &

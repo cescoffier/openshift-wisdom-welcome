@@ -1,2 +1,3 @@
 #!/bin/bash
-sh $OPENSHIFT_HOMEDIR/chameleon.sh stop
+cd $OPENSHIFT_REPO_DIR
+nohup ./chameleon.sh stop |& /usr/bin/logshifter -tag wisdom &
